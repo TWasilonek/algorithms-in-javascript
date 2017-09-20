@@ -95,7 +95,8 @@ class BinarySearch {
             // 4. If you guessed the number, stop
             if (guess === chosenNumber) {
                 console.log(`FOUND! You chose ${guess}`);
-                break;
+                console.log(`TOTAL OPERATIONS: ${this.numberOfOperations}`);
+                return;
             }
             
             // 5. if guess was too high, set max to be guess - 1
@@ -111,10 +112,10 @@ class BinarySearch {
             console.log(`${guess} is not your choice`);
             
             // 7. Go back to step 3
-            guess = (min + max)/2;
         }
         
-        console.log(`TOTAL OPERATIONS: ${this.numberOfOperations}`);
+        console.log(`Your guess was not found`);
+        return -1;
     }
     
 }
