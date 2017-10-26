@@ -1,6 +1,8 @@
 /* 
     Binary Search is a simple algorithm for quick seraching of sorted lists.
     
+    Running time complexity => O(log n)
+    
     The easiest way to explain a binary search is through a game Guess the Number.
     Think of a number between 1 and 100. Now the computer must guess which number you chose.
     The first approach that the computer can take is Linear Search - that means it will be going through each number from 1 to 100 ONE BY ONE.
@@ -18,7 +20,6 @@
         5. if guess was too high, set max to be guess - 1
         6. If guess was too low, set min to be guess + 1
         7. Go back to step 3
-        
 */
 
 'use strict';
